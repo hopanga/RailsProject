@@ -7,3 +7,25 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /* Product Database */
+
+.my-row td {
+	padding: 10px;
+	color: black;
+	border-collapse: separate;
+    border-spacing: 100px 100px;
+    border:1px solid black;
+	}
+
+.my-row th {
+	text-align: center;
+	}
+
+.options {
+	text-align:center;
+	}
+
+.productdb {
+	background-color: #FAFAFA;
+	border-collapse: separate;
+    width: 100%;
+    }
