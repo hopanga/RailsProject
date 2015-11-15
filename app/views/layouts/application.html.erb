@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
@@ -31,11 +31,11 @@
         </nav> <!-- end navbar header -->
         <nav class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#index">Home</a></li>
-            <li><a href="#inventory">All Items</a></li>
-            <li><a href="#request">Product Request</a></li>
-            <li><a href="about">About Us</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">All Items</a></li>
+            <li><a href="">Product Request</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact</a></li>
           </ul>
         </nav>
       </nav> <!-- end nav container -->
@@ -43,7 +43,9 @@
   </div><!-- /.container-fluid -->
 </nav>
 <!-- End Navigation -->
+
 <%= yield %>
+
 <!-- Begin Footer -->
     <footer class="footer-distributed">
       <div class="footer-left">
