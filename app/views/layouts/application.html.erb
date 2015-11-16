@@ -26,12 +26,12 @@
             <span class="icon-bar"></span>
           </button>
           <nav class="navbar-brand" id="homepage">
-            <a href="#index">The Snackbar</a>
+            <%= link_to "The Snackbar", root_path %>
           </nav> <!-- end project name -->
         </nav> <!-- end navbar header -->
         <nav class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="">Home</a></li>
+            <li><%= link_to "Home", root_path %></li>
             <li><a href="">All Items</a></li>
             <li><a href="">Product Request</a></li>
             <li><a href="">About Us</a></li>
@@ -49,9 +49,9 @@
 <!-- Begin Footer -->
     <footer class="footer-distributed">
       <div class="footer-left">
-        <h3>Company<span>Name</span></h3>
+        <h3>The<span>Snackbar</span></h3>
         <p class="footer-links">
-          <a href="#">Home</a>
+          <%= link_to "Home", root_path %>
           ·
           <a href="#">All Items</a>
           ·
