@@ -32,10 +32,10 @@
         <nav class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><%= link_to "Home", root_path %></li>
-            <li><a href="">All Items</a></li>
-            <li><a href="">Product Request</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Contact</a></li>
+            <li><%= link_to "All Items", item_page_path %></li>
+            <li><%= link_to "Product Requests", request_page_path %></li>
+            <li><%= link_to "About Us", about_page_path %></li>
+            <li><%= link_to "Contact", contact_page_path %></li>
           </ul>
         </nav>
       </nav> <!-- end nav container -->
@@ -53,13 +53,13 @@
         <p class="footer-links">
           <%= link_to "Home", root_path %>
           ·
-          <a href="#">All Items</a>
+          <%= link_to "All Items", item_page_path %>
           ·
-          <a href="#">Product Requests</a>
+          <%= link_to "Product Requests", request_page_path %>
           ·
-          <a href="#">About</a>
+          <%= link_to "About Us", about_page_path %>
           ·
-          <a href="#">Contact</a>
+          <%= link_to "Contact", contact_page_path %>
         </p>
         <p class="footer-company-name">Ho Pang Au Yeung &copy; 2015</p>
       </div>
