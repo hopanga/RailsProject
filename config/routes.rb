@@ -24,6 +24,7 @@ Rails.application.routes.draw do
   #   resources :products
 
   # Example resource route with options:
+  post 'static_pages/thank_you'
   #   resources :products do
   #     member do
   #       get 'short'
