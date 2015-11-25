@@ -4,7 +4,7 @@
 
 <%= form_tag("/static_pages/thank_you") do %>
 <div class="row">
-    <div class="col-md-5">
+    <div class="col-md-4">
         <div class="form-group">
             <%= label_tag :name, "Name" %>
             <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
@@ -19,8 +19,7 @@
         </div>      
     </div>
 </div>
-<%= submit_tag 'Send Message', class: 'btn btn-success' %>   
+<%= submit_tag 'Send Message', class: 'btn btn-success' %>
 <% end %>
 <br>
-
-<p>GitHub @ <a href="https://github.com/hopanga">hopanga</a></p>
+<p>GitHub @ hopanga</p>
