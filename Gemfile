@@ -51,3 +51,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'mail_form'
 gem 'simple_form'
 gem 'devise'
+gem 'cancancan'
