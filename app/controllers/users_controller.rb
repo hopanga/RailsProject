@@ -75,8 +75,8 @@ class UsersController < ApplicationController
 
   #ActionMailer
     def thank_you
-      @name = params[:name]
       @email = params[:email]
+      @name = params[:name]
       @message = params[:message]
       ActionMailer::Base.mail(:from => @email,
             :to => 'hp.auyeung91@gmail.com',
