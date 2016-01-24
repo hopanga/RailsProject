@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
+  resources :products do
+    resources :comments
+  end
   resources :users
-
-  resources :products
   resources :orders, only: [:index, :show, :create, :destroy]
 
   get 'static_pages/about', :as => 'about_page'
@@ -16,7 +17,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'static_pages#landing_page'
+  root 'static_pages#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

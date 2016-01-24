@@ -2,5 +2,35 @@
 <%= image_tag "store02.jpg", :class=> "header" %>
 <!-- End Banner -->
 <br>
-<p><%= link_to "View Products", products_path %></p>
-<p><%= link_to "New Products", new_product_path %></p>
+<ul class="products columns-3">
+  <li>
+    <%= link_to image_tag("http://i.imgur.com/t6Ros4i.jpg"), "/products/1" %>
+    <h3>Doritos</h3>
+    <p>Delicious potato chips</p>
+  </li>
+  <li>
+    <%= link_to image_tag("http://forthemommas.com/wp-content/uploads/2012/08/lays-chips.jpeg"), "/products/2" %>
+    <h3>Lays</h3>
+    <p>Delicious potato chips</p>
+  </li>
+  <li>
+    <%= link_to image_tag("http://i.imgur.com/XUxvwls.jpg"), "/products/3" %>
+    <h3>Sun Chips</h3>
+    <p>Delicious potato chips</p>
+  </li>
+  <li>
+    <%= link_to image_tag("http://i.imgur.com/XKqrTWg.png"), "/products/4" %>
+    <h3>Cheetos</h3>
+    <p>Delicious potato chips</p>
+  </li>
+  <li>
+    <%= link_to image_tag("http://i.imgur.com/NlT7lfS.jpg"), "/products/5" %>
+    <h3>Fritos</h3>
+    <p>Delicious potato chips</p>
+  </li>
+  <li>
+    <%= link_to image_tag("http://i.imgur.com/y3S5W3L.jpg"), "/products/6" %>
+    <h3>Kettle Chips</h3>
+    <p>Delicious potato chips</p>
+  </li>
+</ul>
