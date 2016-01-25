@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  devise_for :users
   resources :products do
     resources :comments
   end
+  devise_for :users
   resources :users
   resources :orders, only: [:index, :show, :create, :destroy]
 
