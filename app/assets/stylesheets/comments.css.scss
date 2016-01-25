@@ -1,3 +1,33 @@
 // Place all the styles related to the comments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.product-reviews {
+	text-align: left;
+    padding: 2em;
+	cursor: default; }
+.product-reviews a, .product-reviews span, .product-reviews em {
+    padding: 0.2em 0.5em; }
+.product-reviews .disabled {
+    color: #aaaaaa; }
+.product-reviews .current {
+    font-style: normal;
+    font-weight: bold;
+    color: #ff0084; }
+.product-reviews a {
+    border: 1px solid #dddddd;
+    color: #0063dc;
+    text-decoration: none; }
+.product-reviews a:hover, .product-reviews a:focus {
+    border-color: #003366;
+    background: #0063dc;
+    color: white; }
+.product-reviews .page_info {
+    color: #aaaaaa;
+    padding-top: 0.8em; }
+.product-reviews .previous_page, .product-reviews .next_page {
+    border-width: 2px; }
+.product-reviews .previous_page {
+    margin-right: 1em; }
+.product-reviews .next_page {
+    margin-left: 1em; }
