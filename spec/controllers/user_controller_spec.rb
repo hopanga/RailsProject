@@ -3,7 +3,7 @@ require 'rails_helper'
   describe UsersController, :type => :controller do
 
     before do
-      @user = User.create!(email: "test8@gmail.com", password: "testtest1")
+      @user = FactoryGirl.create(:user)
     end
 
     describe "GET #show" do
@@ -27,7 +27,7 @@ require 'rails_helper'
       end
 
       before do
-        @user2 = User.create!(email: "test9@gmail.com", password: "testtest1")
+        @user2 = FactoryGirl.create(:user)
       end
 
       context "User cannot access other users page" do
