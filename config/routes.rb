@@ -11,7 +11,8 @@ Rails.application.routes.draw do
   get 'static_pages/index', :as => 'index_page'
   get 'static_pages/item', :as => 'item_page'
   get 'static_pages/request', :as => 'request_page'
-  get 'static_pages/thank_you', :as => 'thank_you'
+  post 'static_pages/thank_you', :as => 'thank_you'
+  post 'payments/create', :as => 'payment'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
