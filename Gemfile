@@ -63,3 +63,4 @@ gem 'guard-rspec', require: false
 gem 'spork-rails'
 gem 'guard-spork'
 gem 'byebug'
+gem 'angularjs-rails'
