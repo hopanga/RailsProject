@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<% cache @product do %>
 <p>
   <strong>Name:</strong>
   <%= @product.name %>
@@ -17,6 +17,7 @@
   <strong>Price:</strong>
   <%= @product.price %>
 </p>
+<% end %>
 <%= form_tag "/payments/create" do %>
   <%= render partial: "shared/stripe_checkout_button" %>
 <% end %>

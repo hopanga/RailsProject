@@ -1,5 +1,4 @@
 <h1>Listing products</h1>
-
 <div class="container-fluid col-xs-12">
   <table class="productdb">
     <tr class="my-row">
@@ -11,7 +10,9 @@
     <th>Options</th>
     </tr>
   <tbody>
+  <% cache(cache_key_for_products) do %>
     <%= render @products %>
+  <% end %>
   </tbody>
   </table>
 </div>
